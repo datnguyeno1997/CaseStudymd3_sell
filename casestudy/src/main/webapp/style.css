@@ -1,0 +1,87 @@
+.error {
+    color: red;
+    display: none;
+}
+.input-custom:invalid[focused="true"]~span {
+    display: block;
+}
+img{
+    width: 50px ;
+    height: 50px ;
+}
+.pagee-heading {
+    /*background-image: url("/frontend/assets/images/bg.jpg");*/
+    border-radius: 0px 0px 150px 150px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0px 100px 0px;
+    text-align: center;
+    animation: animateBg 5s linear infinite;
+}
+.login_form {
+    position: absolute;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 50px 5px;
+    inset: 5px;
+    padding: 50px 40px;
+    z-index: 10;
+    color: white;
+    backdrop-filter: blur(15px);
+}
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+.bill_type {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.bill_form_container {
+    background-color: gainsboro;
+    position: relative;
+    width: 800px;
+    height: 700px;
+    border-radius: 50px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.bill_type h5 {
+    color: black !important;
+}
+
+.table_bill {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table_bill th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table_bill th,td {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table_bill tfoot {
+    font-weight: bold;
+}
+.end{
+    text-align: center;
+    margin-top: 60px;
+}
+.end h4,h5{
+    color: red;
+}
