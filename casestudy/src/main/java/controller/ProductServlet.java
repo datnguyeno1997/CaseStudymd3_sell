@@ -45,6 +45,10 @@ public class ProductServlet extends HttpServlet {
         validators = new HashMap<>();
         validators.put("name", new RunnableWithRegex("^[A-Za-z ]{6,20}", "name", errors));
         validators.put("description", new RunnableWithRegex("^[A-Za-z ]{6,20}", "description", errors));
+        validators.put("price", new RunnableWithRegex("^[0-9]{4}", "price", errors));
+        validators.put("quantity", new RunnableWithRegex("^[0-9]{4}", "quantiry", errors));
+        validators.put("category_id", new RunnableWithRegex("^('1'|'2')$", "category", errors));
+        validators.put("author_id", new RunnableWithRegex("^('1'|'2')$", "author", errors));
     }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
